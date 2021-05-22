@@ -1,0 +1,19 @@
+<div class="container w-50 mt-5 text-center">
+  <div class="text-center display-3 m-3 text-white">
+    Word Limit : {{limit}}
+ </div>
+ <input
+    type="button"
+    class="btn btn-info"
+    value="Generate Random Countries"
+    (click)="generateRandomNumber(); generateRandomWords();"
+ />
+
+ <br/>
+ <div  *ngIf="words" class="card card-body">
+  <p >
+     {{words}}
+  </p>
+</div>
+
+</div>
